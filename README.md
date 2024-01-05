@@ -7,3 +7,16 @@ Which embedding model is best:
 - hkunlp/instructor-large 
 
 
+FAQs:
+
+1. How do you update only new and modified documents in the index?
+
+A. refreshed_docs = index.refresh_ref_docs(documents)
+
+2. Which embeddings are best for multilingual content?
+
+A. multilingual-e5-large
+
+3. Which embeddings are best when you need to provide additional context (legal, medical, or scientific data)?
+
+A. Instructor embeddings
