@@ -20,3 +20,8 @@ A. multilingual-e5-large
 3. Which embeddings are best when you need to provide additional context (legal, medical, or scientific data)?
 
 A. Instructor embeddings
+
+
+Resources:
+- https://github.com/aakinlalu/GenerativeAI
+  
