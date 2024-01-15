@@ -1,0 +1,4 @@
+name: llamaindex-llmlingua
+channels:
+  - defaults
+prefix: /Users/maiconmarioto/anaconda3/envs/llamaindex-llmlingua

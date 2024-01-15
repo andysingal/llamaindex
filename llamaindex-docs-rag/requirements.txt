@@ -1,0 +1,13 @@
+requests
+beautifulsoup4
+llama-index
+openai
+pinecone-client
+python-dotenv
+setuptools
+black
+watchdog
+fastapi
+uvicorn
+llmlingua
+accelerate
