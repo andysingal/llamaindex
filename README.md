@@ -25,4 +25,5 @@ A. Instructor embeddings
 Resources:
 - https://github.com/aakinlalu/GenerativeAI
 - [MongoDB-LlamaIndex](https://docs.llamaindex.ai/en/stable/examples/docstore/MongoDocstoreDemo.html)
+- [RAG/LLM Evaluators - DeepEval](https://docs.llamaindex.ai/en/stable/examples/evaluation/Deepeval.html) 
   
