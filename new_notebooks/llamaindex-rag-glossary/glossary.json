@@ -1,0 +1,68 @@
+{
+    "terms": [
+        {
+            "term": "Similarity Map",
+            "explanation": "A dimensionality reduction plot used for displaying high-dimensional data, with additional dimensions displayable via coloring."
+        },
+        {
+            "term": "Data Point Selection",
+            "explanation": "Features in the Similarity Map that allow users to select, deselect, and highlight individual or groups of data points for detailed analysis."
+        },
+        {
+            "term": "Map Customization",
+            "explanation": "Options within the Similarity Map to adjust visualization through controls like zooming, panning, coloring, and sizing, tailored to specific data attributes."
+        },
+        {
+            "term": "Widget",
+            "explanation": "A view or plot that can be integrated within the UI of Renumics Spotlight, such as histograms, scatter plots, or similarity maps."
+        },
+        {
+            "term": "Lens",
+            "explanation": "A specific type of widget in the inspector for displaying both unstructured and structured data."
+        },
+        {
+            "term": "Data-centric AI",
+            "explanation": "Focuses on the iterative improvement of datasets for enhancing the training and evaluation of machine learning models."
+        },
+        {
+            "term": "Duplicates",
+            "explanation": "Data points that are either completely identical or nearly identical to each other."
+        },
+        {
+            "term": "Data Table",
+            "explanation": "A primary view in Spotlight, showing data with various control options, and allows editing of data points, including creating new columns."
+        },
+        {
+            "term": "Filter Bar",
+            "explanation": "A component that enables data filtering based on feature values, impacting the presentation in other components."
+        },
+        {
+            "term": "Scatter Plot",
+            "explanation": "A supportive view to analyze correlations between metadata, with customizable aspects like dot size and color."
+        },
+        {
+            "term": "Histogram",
+            "explanation": "A view that can be stacked to provide insights into data segments over two dimensions, useful for data distribution analysis."
+        },
+        {
+            "term": "Layout",
+            "explanation": "The system in Spotlight that allows users to customize their workspace by adding, removing, resizing, and renaming widgets, as well as saving, loading, or resetting these arrangements."
+        },
+        {
+            "term": "Python API for Layout",
+            "explanation": "A programming interface provided by Spotlight for building and customizing layouts programmatically, enabling advanced customization and automation within the user interface."
+        },
+        {
+            "term": "Inspector Widget",
+            "explanation": "A component that allows detailed examination and editing of the features of individual data points, supporting multiple data types and views."
+        },
+        {
+            "term": "Data Modality Views",
+            "explanation": "Specific views within the Inspector Widget that cater to different types of data, such as text, audio, image, and 3D geometries, enabling specialized inspection and interaction. Mainly useful for displaying different modalities of a data point, especially unstructured data."
+        },
+        {
+            "term": "Data Issues",
+            "explanation": "A list of potential data issues linking to certain data points within the spotlight dataset. Can have additional attributes like an issue title, description, severity. Could e.g. be a data duplicate or a cluster where the model performs badly."
+        }
+    ]
+}
