@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/backend.dockerfile
+    container_name: ${BACKEND_CONTAINER_NAME}
+    ports:
+      - '8000:8000'
+    image: ${BACKEND_IMAGE_NAME}:${BACKEND_IMAGE_TAG}
+    working_dir: /app
+    volumes:
+      - ./backend/app:/app
+      - ./backend_log_config.ini:/app/backend_log_config.ini
+      - ./rag_data:/app/data
+    command: /bin/bash -c "poetry install --no-root --no-interaction --no-ansi && poetry run uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+    environment:
+      - DB_NAME=${DB_NAME}
+      - DB_ENDPOINT=${DB_ENDPOINT}
+      - DB_PORT=${DB_PORT}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - TZ=Asia/Seoul
+      - ENVIRONMENT=${ENVIRONMENT}
+      - LOG_LEVEL=${LOG_LEVEL}
+      - OLLAMA_API_HOST=${OLLAMA_API_HOST}
+      - OLLAMA_API_PORT=${OLLAMA_API_PORT}
+      - OLLAMA_CONTAINER_NAME=${OLLAMA_CONTAINER_NAME}
+      - OLLAMA_SERVICE_NAME=${OLLAMA_SERVICE_NAME}
+    networks:
+      - main-bridge
+
+networks:
+  main-bridge:
+    external: true # You should create this network before running the docker-compose file

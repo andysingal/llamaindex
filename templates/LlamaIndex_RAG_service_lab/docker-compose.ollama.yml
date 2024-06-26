@@ -1,0 +1,61 @@
+# version: '3.8'
+
+# services:
+#   ollama:
+#     build:
+#       context: ./ollama
+#       dockerfile: Dockerfile.ollama_windows
+#     container_name: ${OLLAMA_CONTAINER_NAME}
+#     deploy:
+#       resources:
+#         reservations:
+#           devices:
+#             - driver: nvidia
+#               count: all
+#               capabilities: [ gpu ]
+#     volumes:
+#       - ollama_data:/root/.ollama
+#     ports:
+#       - "11434:11434"
+#     environment:
+#       - NVIDIA_VISIBLE_DEVICES=all
+#       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+#     networks:
+#       - main-bridge
+
+# networks:
+#   main-bridge:
+#     driver: bridge
+
+# volumes:
+#   ollama_data:
+
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama_windows:0.2
+    container_name: ${OLLAMA_CONTAINER_NAME}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    networks:
+      - main-bridge
+
+networks:
+  main-bridge:
+    external: true
+
+volumes:
+  ollama_data:

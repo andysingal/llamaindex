@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:14.7
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - PGDATA=/var/lib/postgresql/data/pgdata
+      - TZ=Asia/Seoul
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    networks:
+      - main-bridge
+networks:
+  main-bridge:
+    external: true # You should create a network named main_bridge before running this docker-compose file.
