@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Public Finance Chatbot</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/layout.css') }}">
+        {% block link %}{% endblock %}
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- HEADER -->
+                <div id="header">
+                    <h1>Public Finance Chatbot</h1>
+                    <div id="right-header">
+                        <form action="{{url_for('switch_model')}}" method="post" id="model-from">
+                            <label for="model">Current model:</label> 
+                            <a style="font-weight: bold;">{{model}}    </a>
+                            <select name="model" id="model" onchange="this.form.submit()">
+                                <option selected>Choose another model</option>
+                                <option value="llama3-8b-8192">llama3-8b</option>
+                                <option value="llama3-70b-8192">llama3-70b</option>
+                                <option value="mixtral-8x7b-32768">mixtral-8x7b</option>
+                                <option value="Gemma-7b-it">Gemma-7b</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            <!-- CONTENT -->
+                <div id="block-body">
+                    {% block body %}{% endblock %}
+                </div>
+            <!-- FOOTER -->
+                <div id="footer">
+                    <p>Public Finance Chatbot v0.1</p>
+                    <a href="{{url_for('reset')}}">Reset the conversation</a>
+                </div>
+        </div>
+    </body>
+</html>

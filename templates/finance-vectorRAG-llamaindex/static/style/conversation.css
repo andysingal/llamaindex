@@ -1,0 +1,63 @@
+.conversation {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  overflow-y: auto;
+  width: 100%;
+  gap: 2rem;
+}
+.conversation .bot-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(220, 220, 240, 0.4);
+  box-shadow: 0 0 0.5rem 1rem rgba(232, 232, 230, 0.3), 0 0.5rem 1rem 0 rgba(232, 232, 230, 0.6);
+  padding: 2%;
+  width: 86%;
+  border: 1px solid rgba(160, 160, 150, 0.1);
+  border-radius: 0.7rem;
+  margin-left: 2%;
+  margin-right: 7%;
+}
+.conversation .bot-message .text-message {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1.2rem;
+  color: rgb(60, 60, 60);
+}
+.conversation .bot-message .user {
+  font-family: "SF Pro Display", sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+  padding-top: 0.7em;
+  right: 0;
+  bottom: 0;
+}
+.conversation .user-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: rgba(240, 240, 245, 0.2);
+  box-shadow: 0 0 0.5rem 1rem rgba(232, 232, 230, 0.12), 0 0.5rem 1rem 0 rgba(232, 232, 230, 0.24);
+  padding: 2%;
+  width: 86%;
+  border: 1px solid rgba(160, 160, 150, 0.1);
+  border-radius: 0.7rem;
+  margin-left: 7%;
+  margin-right: 2%;
+}
+.conversation .user-message .text-message {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1.2rem;
+  color: rgb(60, 60, 60);
+}
+.conversation .user-message .user {
+  font-family: "SF Pro Display", sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+  padding-top: 0.7rem;
+  right: 0;
+  bottom: 0;
+}/*# sourceMappingURL=conversation.css.map */

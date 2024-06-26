@@ -1,0 +1,88 @@
+.main {
+  display: grid;
+  grid-template-columns: 2fr 9fr 2fr;
+  grid-template-rows: 0.5fr 10fr 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  padding-bottom: 5rem;
+}
+.main .conversation {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+  max-height: 66vh;
+  background: rgba(235, 235, 237, 0.9);
+  font-family: "SF Pro Display", sans-serif;
+  border-radius: 0.7rem;
+  box-shadow: 0.2rem 0.2rem 0.8rem 0.5rem rgba(220, 220, 222, 0.12), 0.2rem 0.2rem 0.8rem 0.8rem rgba(220, 220, 222, 0.2);
+}
+.main .input {
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(235, 235, 237, 0.9);
+  width: 100%;
+  border-radius: 0.7rem;
+  box-shadow: 0.2rem 0.3rem 0.8rem 0.5rem rgba(220, 220, 222, 0.12), 0.2rem 0.3rem 0.8rem 0.8rem rgba(220, 220, 222, 0.2);
+}
+.main .input .input-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 3rem;
+  border-radius: 0.4rem;
+  border: 0;
+  background-color: rgba(250, 250, 252, 0.9);
+  box-shadow: 0 0 0.5rem 1rem rgba(230, 230, 230, 0.12), 0 0.5rem 1rem 0 rgba(230, 230, 230, 0.2);
+}
+.main .input .input-form .text-input {
+  background-image: url("/static/ressources/search.png");
+  background-size: 2rem;
+  background-position: 0.5rem center;
+  background-repeat: no-repeat;
+  background-color: rgba(250, 250, 252, 0.9);
+  padding: 0 4rem 0 6rem;
+  height: 3rem;
+  min-width: 40vh;
+  border: 0;
+  border-radius: 0.4rem;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+.main .input .input-form .text-input:focus {
+  border: 0.1rem solid rgba(50, 50, 52, 0.9);
+}
+.main .input .input-form .text-input:hover {
+  border: 0.1rem solid rgba(50, 50, 52, 0.9);
+}
+.main .input .send {
+  border-radius: 0.4rem;
+  border: 0;
+  width: 5rem;
+  height: 3rem;
+  background: rgba(250, 250, 252, 0.9);
+  font-family: "SF Pro Display", sans-serif;
+  color: rgb(100, 100, 100);
+  font-size: 1rem;
+  box-shadow: 0 0 0.5rem 1rem rgba(230, 230, 230, 0.12), 0 0.5rem 1rem 0 rgba(230, 230, 230, 0.2);
+}
+.main .input .send:hover {
+  background: rgba(245, 245, 245, 0.9);
+  border: 0.1rem solid rgba(50, 50, 52, 0.9);
+  box-shadow: 0 0 0.5rem 1rem rgba(230, 230, 230, 0.12), 0 0.5rem 1rem 0 rgba(230, 230, 230, 0.2);
+}
+.main .input .send:active {
+  background: rgba(245, 245, 245, 0.6);
+  border: 0.1rem solid rgba(50, 50, 52, 0.6);
+  box-shadow: 0 0 0.5rem 1rem rgba(230, 230, 230, 0.12), 0 0.5rem 1rem 0 rgba(230, 230, 230, 0.2);
+}/*# sourceMappingURL=index.css.map */
