@@ -25,5 +25,6 @@ A. Instructor embeddings
 Resources:
 - https://github.com/aakinlalu/GenerativeAI
 - [MongoDB-LlamaIndex](https://docs.llamaindex.ai/en/stable/examples/docstore/MongoDocstoreDemo.html)
-- [RAG/LLM Evaluators - DeepEval](https://docs.llamaindex.ai/en/stable/examples/evaluation/Deepeval.html) 
+- [RAG/LLM Evaluators - DeepEval](https://docs.llamaindex.ai/en/stable/examples/evaluation/Deepeval.html)
+- [LlamaIndex-RAG](https://lightning.ai/lightning-ai/studios/chat-with-your-code-using-rag?utm_source=akshay&tab=files&layout=column&path=cloudspaces%2F01hqv3vhhramx0jb4bgq0gb8a0&y=15&x=0) 
   
